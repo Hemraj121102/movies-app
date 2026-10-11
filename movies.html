@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies and Shows</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- swiper js link for slider  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/swiper.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+            <div class="logo-box">
+                <img src="images/logo_1x.webp" alt="logo">
+            </div>
+            <div class="nav-box">
+                <nav>
+                    <ul>
+
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="#">movies & shows</a></li>
+                        <li>support</li>
+                        <li>subscriptions</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="icon-box">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-bell"></i>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="movies-banners">
+            <div class="container">
+                <div class="movies-slider">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/movies_banners/movie_banner1_1x.webp" srcset="images/movies_banners/movie_banner1_2x.webp" alt="movie baner" width="100%" height="100%" ></div>
+                            <div class="swiper-slide"><img src="images/movies_banners/movies_banner2_1x.webp" srcset="images/movies_banners/movies_banner2_2x.webp" alt="movie baner" width="100%" height="100%" ></div>
+                            <div class="swiper-slide"><img src="images/movies_banners/movies_banner3_1x.webp" srcset="images/movies_banners/movies_banner3_2x.webp" alt="movie baner" width="100%" height="100%" ></div>
+                           
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="autoplay-progress">
+                            <svg viewBox="0 0 48 48">
+                                <circle cx="24" cy="24" r="20"></circle>
+                            </svg>
+                            <span></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="movies">
+            <div class="container">
+                <div class="popular-movies" id="popular-movies">
+                    <!-- <div class="movie-box">
+                        <img src="images/categories1_1x.webp" alt="movies" width="192px" height="210px">
+                        <div class="title-box">
+                           <div class="title"> <h3 class="title">bhai jaan</h3></div>
+                            <div class="views"><i class="fa-solid fa-eye"></i></div>
+                        </div>
+                    </div> -->
+                   
+                       
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- 
+     <footer>
+       <div class="container">
+         <div class="row main-footer">
+            <div class="col">
+                <h5 class="footer-heading">Home</h5>
+                <ul>
+                    <li><a href="">Categories</a></li>
+                    <li><a href="">devices</a></li>
+                    <li><a href="">pricing</a></li>
+                    <li><a href="">F & Q</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5 class="footer-heading">Movies</h5>
+                <ul>
+                    <li><a href="">Gernes</a></li>
+                    <li><a href="">Trending</a></li>
+                    <li><a href="">New Release</a></li>
+                    <li><a href="">Popular</a></li>
+                </ul>
+            </div>
+            <div class="col"><h5 class="footer-heading">Shows</h5>
+                <ul>
+                    <li><a href="">Gernes</a></li>
+                    <li><a href="">Trending</a></li>
+                    <li><a href="">New Release</a></li>
+                    <li><a href="">Popular</a></li>
+                </ul></div>
+            <div class="col"><h5 class="footer-heading">Support</h5>
+                <ul>
+                    <li><a href="">Contact us</a></li>
+                 
+                </ul></div>
+            <div class="col"><h5 class="footer-heading">Subscription</h5>
+                <ul>
+                    <li><a href="">Plans</a></li>
+                    <li><a href="">features</a></li>
+                
+                </ul></div>
+            <div class="col"><h5 class="footer-heading">Connect With Us</h5>
+                <ul>
+                    <li>
+                        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                         <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                         <a href=""><i class="fa-brands fa-square-linkedin"></i></a>
+                    </li>
+                  
+                    
+                </ul></div>
+
+        </div>
+
+        <div class="copy-right">
+            <p>@2026 streamvib, All Rights Reserved</p>
+        </div>
+       </div>
+    </footer> -->
+
+    <!-- swiper js link for slider  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

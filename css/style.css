@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+body {
+    background-color: #1e1e1e;
+}
+
+
+.container {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+section {
+
+    color: white;
+}
+
+header {
+    position: fixed;
+    z-index: 9;
+    top: 20px;
+    width: 100%;
+
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    background-color: #0F0F0F;
+    height: 60px;
+    color: white;
+    display: flex;
+    border-radius: 10px;
+    padding: 0 30px;
+
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 12px 20px;
+    border-radius: 10px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #2e2d2d;
+    }
+}
+nav ul a{
+        color: white;
+        text-decoration: none;
+}
+
+.icon-box .fa-bars {
+    display: none;
+}
+
+.icon-box i {
+    font-size: 18px;
+    margin: 0 5px;
+    color: white;
+}
+
+/* ===========   banner start ========== */
+
+.baner {
+    height: 90vh;
+    width: 100%;
+    background-image: url(../images/banner.jpg);
+    background-size: contain;
+    background-position: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 20px;
+}
+
+.baner h1 {
+    font-size: 48px;
+    margin: 12px;
+}
+
+.secondary-btn {
+    text-align: center;
+    margin: 50px auto;
+     
+}
+
+.secondary-btn a {
+    text-decoration: none;
+    color: white;
+    background-color: #141414;
+    padding: 15px 24px;
+    border-radius: 10px;
+  
+}
+
+.primary-btn {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.primary-btn a {
+    text-decoration: none;
+    color: white;
+    background-color: #e50000;
+    padding: 15px 24px;
+    border-radius: 10px;
+}
+
+/* ========   banner end ====== */
+/* ====== categories start======== */
+.categories {
+    color: white;
+}
+
+.text-and-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec-heading {
+    font-size: 28px;
+    margin: 10px 0;
+
+}
+
+.arrow-btns {
+    background-color: #0F0F0F;
+    padding: 12px;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* categories boxs  */
+.categories-boxs {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.categorie-box {
+    background-color: #262626;
+    width: 240px;
+    height: 280px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.categorie-box a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ================ categorie end ========== */
+/* ========== devices start =========== */
+.devices-text {
+    color: white;
+}
+
+.device-boxs {
+    margin-top: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.device-box {
+    max-width: 400px;
+    background: linear-gradient(30deg, #000000 10%, #E50000 400%);
+    border-radius: 10px;
+    padding: 40px;
+}
+.device-box p{
+      font-size: 16px;
+    color: gray;
+}
+
+.device-heading-box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.device-heading-box h4 {
+    margin: 0 12px;
+    font-size: 20px;
+}
+
+/* ===================devices end ==================*/
+
+/* ==================  plan start ======== */
+
+.plans {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.plans .plan-box {
+    max-width: 400px;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 80px 0;
+}
+.plan-box h4{
+    font-size: 24px;
+}
+.plan-box p{
+    margin: 16px 0 50px 0;
+     font-size: 18px;
+    color: gray;
+}
+
+.btn-box {
+    display: flex;
+}
+.plan-box h3{
+    font-size: 28px;
+
+}
+
+.plan-box small{
+    font-size: 18px;
+    color: gray;
+}
+
+/* ============== plan  end  ============= */
+/* ============= free trial start ============== */
+.free-trial{
+    margin: 50px 0;
+}
+.trial-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 80px;
+    border-radius: 10px;
+    background-image: url(../images/hero\ baner.jpg);
+    background-size: contain;
+
+
+}
+.trial-box .primary-btn{
+    margin: 0;
+}
+
+/* ========== free triel end ========== */
+/* ==========footer start =========== */
+footer{
+    background-color: #000000;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding: 80px 12px;
+    color: white;
+
+}
+.main-footer ul{
+    list-style: none;
+
+
+}
+.main-footer li{
+    margin: 10px 0;
+}
+.main-footer ul a{
+    color: gray;
+    font-size: medium;
+    text-decoration: none;
+}
+.main-footer i{
+    font-size: 30px;
+}
+.main-footer h5{
+    font-size: 18px;
+}
+.copy-right{
+    color: gray;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* ================================ */
+/* movies and shows page start */
+/* ================================ */
+
+
+/* slider  start */
+.movies-slider{
+    width: 100%;
+    margin-top: 100px;
+    height: 70vh;
+  
+}
+/* slider end  */
+
+.movies{
+    margin: 50px 0;
+    padding: 50px 0;
+}
+.movies .popular-movies{
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    gap: 20px;
+
+}
+
+.movies .popular-movies::-webkit-scrollbar {
+  display: none;
+}
+.movie-box{
+    min-width: 224px;
+    height: 308px;
+    background-color: #2e2d2d;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 16px;
+   
+
+}
+
+.title-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    
+}
+.title-box div{
+    font-size: 10px;
+    background-color: #1A1A1A;
+    padding: 5px 6px;
+    border-radius: 10px;
+    
+}
+.title-box .title{
+    text-align: center;
+    width: 70%;
+    height: 24px;
+    overflow: hidden;
+}
