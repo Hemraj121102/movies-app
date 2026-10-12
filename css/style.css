@@ -348,7 +348,8 @@ footer{
     margin: 50px 0;
     padding: 50px 0;
 }
-.movies .popular-movies{
+
+.movies .popular-movies ,.top-rated ,.upcoming ,.nowplaying{
     width: 100%;
     overflow: scroll;
     display: flex;
@@ -356,7 +357,17 @@ footer{
 
 }
 
+
 .movies .popular-movies::-webkit-scrollbar {
+  display: none;
+}
+.movies .top-rated::-webkit-scrollbar {
+  display: none;
+}
+.movies .upcoming::-webkit-scrollbar {
+  display: none;
+}
+.movies .nowplaying::-webkit-scrollbar {
   display: none;
 }
 .movie-box{

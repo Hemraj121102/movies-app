@@ -8,6 +8,9 @@ const nowplaying = `https://api.themoviedb.org/3/movie/now_playing?api_key=${api
 
 
 const popularMovies = document.getElementById("popular-movies");
+const topratedMovies = document.getElementById("top-rated");
+const upcomingMovies = document.getElementById("upcoming");
+const nowplayingMovies = document.getElementById("nowplaying");
 
 
 
@@ -26,17 +29,83 @@ fetch(popular).then((rawdata) => {
                         </div>`
 
          popularMovies.appendChild(movieBox);
-         console.log(movie);
+    
     
       });
    })
 })
 
 
-// movieBox.innerHTML = `<img src="images/categories1_1x.webp" alt="movies" width="192px" height="210px">
-//                         <div class="title-box">
-//                            <div class="title"> <h3 class="title">bhai jaan</h3></div>
-//                             <div class="views"><i class="fa-solid fa-eye"></i></div>
-//                         </div>`
+
+
+
+
+fetch(toprated).then((rawdata) => {
+   rawdata.json().then((data) => {
+      data.results.forEach(movie => {
+
+         const movieBox = document.createElement("div");
+         movieBox.classList.add("movie-box");
+
+
+         movieBox.innerHTML += `<img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="movies" width="192px" height="210px">
+                        <div class="title-box">
+                           <div class="title"> <h3>${movie.title}</h3></div> 
+                            <div class="views"><i class="fa-solid fa-eye"></i> ${Math.trunc(movie.vote_average)} /10</div>
+                        </div>`
+
+         topratedMovies.appendChild(movieBox);
+    
+    
+      });
+   })
+})
+
+
+
+fetch(upcoming).then((rawdata) => {
+   rawdata.json().then((data) => {
+      data.results.forEach(movie => {
+
+         const movieBox = document.createElement("div");
+         movieBox.classList.add("movie-box");
+
+
+         movieBox.innerHTML += `<img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="movies" width="192px" height="210px">
+                        <div class="title-box">
+                           <div class="title"> <h3>${movie.title}</h3></div> 
+                            <div class="views"><i class="fa-solid fa-eye"></i> ${Math.trunc(movie.vote_average)} /10</div>
+                        </div>`
+
+         upcomingMovies.appendChild(movieBox);
+    
+    
+      });
+   })
+})
+
+
+
+
+fetch(nowplaying).then((rawdata) => {
+   rawdata.json().then((data) => {
+      data.results.forEach(movie => {
+
+         const movieBox = document.createElement("div");
+         movieBox.classList.add("movie-box");
+
+
+         movieBox.innerHTML += `<img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="movies" width="192px" height="210px">
+                        <div class="title-box">
+                           <div class="title"> <h3>${movie.title}</h3></div> 
+                            <div class="views"><i class="fa-solid fa-eye"></i> ${Math.trunc(movie.vote_average)} /10</div>
+                        </div>`
+
+         nowplayingMovies.appendChild(movieBox);
+    
+    
+      });
+   })
+})
 
 
