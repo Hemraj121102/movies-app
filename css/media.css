@@ -1,0 +1,39 @@
+@media screen and (max-width : 1180px) {
+
+  
+}
+
+
+@media screen and (max-width : 980px) {
+      header .nav-box{
+        display: none;
+    }
+    .icon-box .fa-bars {
+    display: inline-block;
+}
+    .categories .arrow-btns{
+        display: none;
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .row{
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+        row-gap: 20px;
+    }
+    
+}
+@media screen and (max-width : 480px) {
+     .row{
+        grid-template-columns: repeat(2,1fr);
+        text-align: center;
+        row-gap: 20px;
+    }
+    .logo-box{
+        width: 60%;
+    }
+    .logo-box img {
+        width: 100%;
+    }
+}
