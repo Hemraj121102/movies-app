@@ -87,7 +87,7 @@ nav ul a{
 /* ===========   banner start ========== */
 
 .baner {
-    /* height: 90vh;    */
+    height: 480px;   
     width: 100%;
     aspect-ratio: 16/9;
     background-image: url(../images/banner.jpg);
