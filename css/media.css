@@ -1,5 +1,7 @@
 @media screen and (max-width : 1180px) {
-
+.plans .plan-box{
+     margin-top:20px;
+}
   
 }
 
@@ -22,9 +24,18 @@
         text-align: center;
         row-gap: 20px;
     }
+ .baner {
+    height: auto;
+    aspect-ratio: 16/9;
+ }
+ .baner p {
+    display: none;
+ }
     
 }
 @media screen and (max-width : 480px) {
+    header {
+    position: static;}
      .row{
         grid-template-columns: repeat(2,1fr);
         text-align: center;
@@ -36,4 +47,6 @@
     .logo-box img {
         width: 100%;
     }
+ 
+
 }

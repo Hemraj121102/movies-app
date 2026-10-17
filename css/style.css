@@ -87,31 +87,38 @@ nav ul a{
 /* ===========   banner start ========== */
 
 .baner {
-    height: 90vh;
+    height: 90vh;   
     width: 100%;
+    aspect-ratio: 16/9;
     background-image: url(../images/banner.jpg);
     background-size: contain;
     background-position: center;
+    /* background-repeat: repeat-x; */
     color: white;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: end;
     padding: 20px;
+   
 }
 
 .baner h1 {
-    font-size: 48px;
+    font-size: clamp(1rem, 5vw + 1rem, 3rem);
     margin: 12px;
+}
+.baner p{
+    font-size: clamp( 0.5rem,1rem,1.5rem);
 }
 
 .secondary-btn {
     text-align: center;
-    margin: 50px auto;
+    margin: 30px auto;
      
 }
 
 .secondary-btn a {
+    font-size: 1rem;
     text-decoration: none;
     color: white;
     background-color: #141414;
@@ -122,10 +129,11 @@ nav ul a{
 
 .primary-btn {
     text-align: center;
-    margin: 50px auto;
+    margin: 30px auto;
 }
 
 .primary-btn a {
+    font-size: 1rem;
     text-decoration: none;
     color: white;
     background-color: #e50000;
@@ -146,7 +154,7 @@ nav ul a{
 }
 
 .sec-heading {
-    font-size: 28px;
+    font-size: 1.75rem;
     margin: 10px 0;
 
 }
@@ -160,7 +168,7 @@ nav ul a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 /* categories boxs  */
@@ -239,20 +247,25 @@ nav ul a{
 
 /* ==================  plan start ======== */
 
+.plan {
+    margin-top: 40px;
+}
 .plans {
     display: flex;
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
+   
 
 }
 
 .plans .plan-box {
-    max-width: 400px;
+    max-width: 390px;
     background-color: #1A1A1A;
     border-radius: 10px;
-    padding: 50px;
-    margin: 80px 0;
+    padding: 20px;
+    margin-top: 80px ;
+
 }
 .plan-box h4{
     font-size: 24px;
@@ -265,6 +278,7 @@ nav ul a{
 
 .btn-box {
     display: flex;
+    flex-wrap: wrap;
 }
 .plan-box h3{
     font-size: 28px;
