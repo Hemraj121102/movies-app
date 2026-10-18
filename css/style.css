@@ -89,7 +89,7 @@ nav ul a{
 .baner {
     height: 480px;   
     width: 100%;
-    aspect-ratio: 16/9;
+    /* aspect-ratio: 16/9; */
     background-image: url(../images/banner.jpg);
     background-size: contain;
     background-position: center;
