@@ -39,7 +39,7 @@ header .container {
     align-items: center;
 }
 
-nav {
+header nav {
     background-color: #0F0F0F;
     height: 60px;
     color: white;
@@ -89,7 +89,6 @@ nav ul a{
 .baner {
     height: 480px;   
     width: 100%;
-    /* aspect-ratio: 16/9; */
     background-image: url(../images/banner.jpg);
     background-size: contain;
     background-position: center;
@@ -145,11 +144,30 @@ nav ul a{
 /* ====== sidebar start ========== */
 .sidebar{
     height: 100vh;
-    width: 25%;
-    position: absolute;
-    background-color: aqua;
+    width: min(300px ,50%);
+    top: 0;
+    left: -100%;
+    position: fixed;
+    background-color: #2e2d2d;
     z-index: 99;
+    transition: all 1s  ease-in;
 }
+.sidebar-on{
+    left: 0;
+}
+
+.sidebar ul{
+    flex-direction: column;
+    align-items: start;
+}
+.sidebar .sidebar-icons{
+    text-align: end;
+    margin: 12px;
+    color: white;
+      
+}
+
+
 /* ====== sidebar end ========== */
 
 

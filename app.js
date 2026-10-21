@@ -11,8 +11,16 @@ const popularMovies = document.getElementById("popular-movies");
 const topratedMovies = document.getElementById("top-rated");
 const upcomingMovies = document.getElementById("upcoming");
 const nowplayingMovies = document.getElementById("nowplaying");
+const sidebar = document.getElementById("sidebar");
+const bars = document.getElementById("bars");
+const bars2 = document.getElementById("bars2");
 
-
+bars.addEventListener("click" ,()=>{
+sidebar.classList.toggle("sidebar-on");
+});
+bars2.addEventListener("click" ,()=>{
+sidebar.classList.toggle("sidebar-on");
+});
 
 fetch(popular).then((rawdata) => {
    rawdata.json().then((data) => {
